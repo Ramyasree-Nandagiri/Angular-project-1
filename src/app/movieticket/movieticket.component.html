@@ -1,0 +1,7 @@
+<p>movieticket works!</p>
+
+<label for="moviename">Movie Name:</label>
+<input type="text" [(ngModel)]="movieName" name="txtmoview"/>
+<label for="ticketcount">Ticket Count</label>
+<input type="text" name="ticketcount" [(ngModel)]="ticketCount"/>
+<input type="submit" value="submit" [routerLink]="['ticketpayment']" [queryParams]="{moviename:getmovieName,tcount:ticketCount}">
